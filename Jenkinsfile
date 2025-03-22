@@ -4,7 +4,7 @@ pipeline {
         stage('Info') {
             steps {
                 echo 'Testing...'
-                sh 'whoami' 
+                sh 'whoami'
             }
         }
     }
