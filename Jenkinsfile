@@ -1,5 +1,7 @@
 pipeline {
-    agent 'saigonsky'
+    agent {
+        label 'saigonsky'
+    }
     stages {
         stage('Info') {
             steps {
