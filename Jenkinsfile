@@ -6,7 +6,7 @@ pipeline {
         stage('Info') {
             steps {
                 echo 'Testing...'
-                sh 'whoami' 
+                sh( """ whoami;pwd;ls -la """, label: "test")
             }
         }
     }
